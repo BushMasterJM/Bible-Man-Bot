@@ -1,0 +1,45 @@
+Metadata-Version: 1.1
+Name: fiduswriter-books
+Version: 3.11.1
+Summary: A Fidus Writer plugin to allow creation of books and article collections
+Home-page: https://www.github.org/fiduswriter/fiduswriter-books
+Author: Johannes Wilm
+Author-email: johannes@fiduswriter.org
+License: AGPL License
+Description: FidusWriter-Books
+        =================
+        
+        FidusWriter-Books is a Fidus Writer plugin to allow for the composition of books
+        and article collections, using individual documents as chapters.
+        
+        
+        Installation
+        ------------
+        
+        1) Install Fidus Writer like this:
+        
+            pip install fiduswriter[books]
+        
+        2) Add "book" to your INSTALLED_APPS setting in the
+           configuration.py file like this::
+        
+            INSTALLED_APPS += (
+                ...
+                'book',
+            )
+        
+        3) Run ``fiduswriter setup`` to create the needed database tables and to create the needed JavaScript files.
+        
+        4) (Re)start your Fidus Writer server
+        
+Platform: UNKNOWN
+Classifier: Environment :: Web Environment
+Classifier: Framework :: Django
+Classifier: Framework :: Django :: 4.1
+Classifier: Intended Audience :: Developers
+Classifier: License :: OSI Approved :: GNU Affero General Public License v3
+Classifier: Operating System :: OS Independent
+Classifier: Programming Language :: Python
+Classifier: Programming Language :: Python :: 3
+Classifier: Topic :: Internet :: WWW/HTTP
+Classifier: Topic :: Internet :: WWW/HTTP :: Dynamic Content
